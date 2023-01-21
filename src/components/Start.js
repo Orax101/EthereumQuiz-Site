@@ -1,24 +1,15 @@
 import { useState, useEffect, useRef } from "react";
-import { MDBBtn } from "mdb-react-ui-kit";
 import {ethers} from "ethers";
 import oraXLogo from "../components/images/oraXLogo.png";
 import wallet from "../components/images/wallet.png";
 import swal from 'sweetalert';
 
+const Start = ({ setName, setTimeOut }) => {
+const [publicKey, setPublickey] = useState();
+const [msg, setMsg] = useState();
+const inputRef = useRef();
 
-
-  const contractAddress= "0xB5dC68CA2bcdc9a363089F906d60871b6D9A6F94" ;
-
-
- const Start = ({ setName, setTimeOut }) => {
-
-  const [publicKey, setPublickey] = useState();
-  const [network, setNetwork] = useState();
-  const [chainId, setChainId] = useState();
-  const [msg, setMsg] = useState();
-  const inputRef = useRef();
-
-  const handleClick = () => {
+const handleClick = () => {
   setTimeOut(false);
   inputRef.current.value && setName(inputRef.current.value);
 
@@ -33,11 +24,8 @@ const connectButton = async () => {
   if (ethereum.isMetaMask) {
     const provider = new ethers.providers.Web3Provider(ethereum);
     const accounts = await provider.send("eth_requestAccounts", []);
-
     const { name, chainId } = await provider.getNetwork();
 
-    setNetwork(name);
-    setChainId(chainId);
     setPublickey(accounts[0]);
     swal("Your connection status","Wallet connected successfully!","success");
   } else {
@@ -46,17 +34,6 @@ const connectButton = async () => {
 };
   
   return (
-    
-    //<div
-     // style={{
-     //   margin: "auto",
-    //   padding: "15px",
-    //    maxWidth: "400px",
-       // alignContent: "center",
-      //  marginTop: "300px",
-        
-      //}}
-    ///>
     
 <div class="box">
   <div class="form">
@@ -71,20 +48,17 @@ const connectButton = async () => {
 
       <button className="connect-btn" onClick={connectButton}>
         <b> <img className="walletLogo" src={wallet}/>Connect Wallet</b>
-        </button> 
+      </button> 
 
       <div className="connection"><p>Address: {publicKey}</p>
       {msg && <p>{msg}</p>}</div>
 
 
-        <button className="start-btn" onClick={handleClick}>
+      <button className="start-btn" onClick={handleClick}>
         <b> Start Game</b>
-        </button> 
+      </button> 
 
-    
-
-    
-    </div></div>
+     </div></div>
   );
 };
 

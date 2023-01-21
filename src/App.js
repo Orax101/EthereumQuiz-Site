@@ -10,7 +10,6 @@ import {ethers} from "ethers";
 import { ethereum } from "web3";
 import swal from 'sweetalert';
 
-
 function App() {
   const [name, setName] = useState(null);
   const [questionNumber, setQuestionNumber] = useState(1);
@@ -33,9 +32,6 @@ function App() {
   const contractAddress = "0xB5dC68CA2bcdc9a363089F906d60871b6D9A6F94";
   const [userAddress, setUserAddress] = useState(null);
   const earnedInWei = ethers.utils.parseEther(earned);
-
-
-  
   const handleWithdraw = async () => {
     
     const {ethereum} = window;
@@ -54,7 +50,6 @@ function App() {
       const contract = new ethers.Contract(contractAddress, abi, signer);
       try {
         const tx = await contract.withdraw(earnedInWei);
-
         await tx.wait();
         swal("Withdrawal Status","Withdrawal was succesful","success" );
       } catch (error) {
@@ -64,7 +59,6 @@ function App() {
       console.error("No web3 provider found. Please install MetaMask or use another web3 provider");
     }
   }
-
 
   return (
     <div className="App">
@@ -80,8 +74,7 @@ function App() {
                <b>Withraw Earnings</b>
                </button>
                
-              
-               </div>
+              </div>
                
                
               

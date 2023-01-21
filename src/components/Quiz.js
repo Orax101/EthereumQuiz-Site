@@ -30,10 +30,6 @@ const Quiz = ({ data, questionNumber, setQuestionNumber, setTimeOut }) => {
     setSelectedAnswer(item);
     setClassName("answer active");
 
-    // setTimeOut(() => {
-    //   setClassName(item.correct ? "answer correct" : "answer wrong");
-    // }, 3000);
-
     delay(3000, () => {
       setClassName(item.correct ? "answer correct" : "answer wrong");
     });

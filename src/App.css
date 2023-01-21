@@ -170,23 +170,19 @@
   display: inline-block;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
-  
-  
 }
+
 .Replay-btn{
   margin-left: 260px;
-  
-  
 }
 
  p{
   padding: 20px -5px;
   font-size: 1em;
-  
   font-family: "poppins",sans-serif;
   font-size: 15px;
-  
 }
+
 .box{
   position: relative;
   width: 390px;
@@ -238,24 +234,13 @@
   background: hsl(228, 6%, 17%);
   z-index: 10;
   padding: 50px 40px;
-
-
-  /*position: relative;
-  background: #28292d;
-  inset:2px;
-  border-radius: 8px;
-  z-index: 10;
-  padding: 50px 40px;
-  display: flex;
-  flex-direction: column;*/
 }
-
-    
 
 .form-control{
   padding: 20px 20px;
   margin-top: 20px;
 }
+
 h2{
   color: #45f3ff;
   font-weight: 500;
@@ -263,6 +248,7 @@ h2{
   letter-spacing: 0.1em;
   margin-right: 50px;
 }
+
 .connection{
   text-align: center;
 }
@@ -281,6 +267,7 @@ h2{
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .start-btn{
   background-color:#45f3ff;
   width: 100%;
@@ -291,14 +278,15 @@ h2{
   display: inline-block;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
-  
-}
+  }
+
 .oraXLogo{
   width: 150px;
   height:150px;
   margin-left: 50px;
   margin-top:-30px;
 }
+
 .walletLogo{
   width: 45px;
   height: 30px;
