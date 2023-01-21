@@ -32,7 +32,7 @@
 ### Prerequisites
 - Node.js v12 or higher
 - npm v6 or higher
-- Metamask or any other web3 wallet
+- Metamask 
 
 ### Steps
 1) Clone the repository by running the following command:
