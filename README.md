@@ -6,6 +6,10 @@
 
  [@Orax101](https://www.github.com/Orax101)
  
+ ## Game Live Demo
+ 
+[@Eth-quiz](https://ethereum-quiz-site.vercel.app/)
+ 
  ## Tech Stack
 
 **Frontend:** React.js.  
