@@ -30,6 +30,10 @@
 - **Multiple choice questions:** The app includes a variety of multiple choice questions that test users' knowledge of Ethereum and blockchain technology.
 - **Rewards system:**  Users can earn rewards in the form of Ether for correctly answering questions.Upon completion of the quiz, users have the option to withdraw their earned rewards through the implementation of a withdrawal process. The rewards are then transferred to the user's designated wallet, providing a secure and efficient experience.
 
+## Credits 
+The gaming format of this app was inspired by trickJs kbc-quiz-app 
+(https://github.com/trickjsprogram/kbc-quiz-app) Its Components and "who wants to be a millionaire" style of gaming was used.
+
 ## How The Game Works:
 
 - To start, connect to your wallet to play the game. If the connection is successful, you will receive a prompt confirming the connection.
