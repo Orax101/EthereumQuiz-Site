@@ -16,6 +16,8 @@ function App() {
   const [timeOut, setTimeOut] = useState(false);
   const [earned, setEarned] = useState("0");
   const [withdrawn, setWithdrawn] = useState(false);
+  
+  
 
   useEffect(() => {
     questionNumber > 1 &&
@@ -62,6 +64,9 @@ function App() {
       swal("Withrawal Failed","No web3 provider found. Please install MetaMask or use another web3 provider","error");
       
     }
+
+    
+    
   };
   
 
