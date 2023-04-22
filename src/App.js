@@ -15,6 +15,7 @@ function App() {
   const [questionNumber, setQuestionNumber] = useState(1);
   const [timeOut, setTimeOut] = useState(false);
   const [earned, setEarned] = useState("0");
+  const [withdrawn, setWithdrawn] = useState(false);
 
   useEffect(() => {
     questionNumber > 1 &&
@@ -35,10 +36,10 @@ function App() {
   const handleWithdraw = async () => {
     
     const {ethereum} = window;
-    const threshold = 0.004;
+    const threshold = 0.00004;
 
     if (earned < threshold) {
-      swal("Withdrawal failed","Sorry you can't withdraw amount less than 0.004 Eth","error");
+      swal("Withdrawal failed","Sorry you can't withdraw amount less than 0.00004 Eth","error");
       return;
     }
     
@@ -52,13 +53,17 @@ function App() {
         const tx = await contract.withdraw(earnedInWei);
         await tx.wait();
         swal("Withdrawal Status","Withdrawal was succesful","success" );
+        setWithdrawn(true);
       } catch (error) {
         console.error("Transaction Error: ", error);
+        swal("Withrawal Failed","No web3 provider found. Please install MetaMask or use another web3 provider","error");
       }
     } else {
-      console.error("No web3 provider found. Please install MetaMask or use another web3 provider");
+      swal("Withrawal Failed","No web3 provider found. Please install MetaMask or use another web3 provider","error");
+      
     }
-  }
+  };
+  
 
   return (
     <div className="App">
@@ -70,9 +75,9 @@ function App() {
             <div className="main">
               {timeOut ? (
                 <div className="GameEnd"><h1 className="earned">You Earned Total: {earned}</h1>
-                 <button className="withraw-btn" onClick={handleWithdraw}>
+                 { !withdrawn && <button className="withraw-btn" onClick={handleWithdraw}>
                <b>Withraw Earnings</b>
-               </button>
+               </button>}
                
               </div>
                

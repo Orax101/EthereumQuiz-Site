@@ -1,22 +1,22 @@
 const data = [
     {
       id: 1,
-      question: " What is the Ethereum Virtual Machine?",
+      question: "Which of these is an example of a Smart Contract Hub?",
       answers: [
         {
-          text: "Decentralized database",
+          text: "Edge",
+          correct: false,
+        },
+        {
+          text: "Solana",
+          correct: false,
+        },
+        {
+          text: "Bunzz",
           correct: true,
         },
         {
-          text: "Computing platform",
-          correct: false,
-        },
-        {
-          text: "Cryptocurrency",
-          correct: false,
-        },
-        {
-          text: " Peer-to-peer",
+          text: "Orax",
           correct: false,
         },
       ],
@@ -127,7 +127,7 @@ const data = [
             correct: true,
           },
           {
-            text: "Statements",
+            text: "Neither Expressions nor statements",
             correct: false,
           },
         ],
