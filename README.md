@@ -1,6 +1,6 @@
 # EthereumQuiz-Site
 
-  This is a decentralized quiz application, where users can answer a series of Ethereum blockchain-related questions and earn Ether based on their performance. The app utilizes the power of blockchain technology to provide a secure and transparent experience for users. With this application, players can test their knowledge of the Ethereum ecosystem and earn rewards for their understanding.
+  This is a decentralized quiz application, where users can answer a series of Ethereum blockchain-related questions and earn Ether based on their performance. The app utilizes the power of blockchain technology to provide a secure and transparent experience for users. With this application, players can test their knowledge of the Ethereum ecosystem and earn rewards for their understanding. The primary objective of this application is to incentivize individuals to expand their knowledge in the web3 space, thereby promoting the growth and development of the ecosystem.
   
   ## Author
 
@@ -18,7 +18,7 @@
 
 **Frontend IDE:** Visual Studiocode. 
 
-**Smart Contract Testing/Deployment:** Remix Online IDE. 
+**Smart Contract Testing/Deployment:** Remix Online IDE.(then imported into Bunzz)
 
 
 
@@ -42,6 +42,11 @@ The gaming format of this app was inspired by trickJs kbc-quiz-app
 - Upon completion of the game, the amount of ETH assigned to the level you ended the game on will become your earnings.
 - To withdraw your earnings, there is a button available. However, you must have won a minimum of 0.004 ETH to be able to withdraw.
 - After withdrawing, you can exit the game and reload the page for another game.
+
+## For Web3Afrika Hackathon
+- This Project was submitted for the Web3Afrika Hackathon sponsored by Bunzz.
+- The original plan was to deploy the smart contract for this project on the Bunzz platform. However, technical difficulties during deployment rendered this unfeasible. As a result, the smart contract(deployed with remix) was imported as an external module, and given the name 'ethereumQuizApp'. This module was subsequently integrated into the 'ERC20DAOToken' module that already existed on the Bunzz platform.
+![bandicam 2023-04-22 15-02-22-752](https://user-images.githubusercontent.com/120677681/233789959-42755f2e-0564-4642-ae3b-56a89fae5ba2.jpg)
 
  ## DApp Interface
 ![bandicam 2023-01-21 06-28-22-735](https://user-images.githubusercontent.com/120677681/213862019-5233e44d-f6f0-47fa-afe0-3fd9e0015e20.jpg)
