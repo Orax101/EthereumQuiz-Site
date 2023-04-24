@@ -32,7 +32,7 @@ function App() {
     }
   }, []);
 
-  const contractAddress = "0xB5dC68CA2bcdc9a363089F906d60871b6D9A6F94";
+  const contractAddress = "0xa997B79FC2d318EecA7a520E5Ac9c72fB47f3a20";
   const [userAddress, setUserAddress] = useState(null);
   const earnedInWei = ethers.utils.parseEther(earned);
   const handleWithdraw = async () => {
