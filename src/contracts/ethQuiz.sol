@@ -2,7 +2,10 @@
 
 pragma solidity >=0.8.7;
 
-contract ethQuiz {
+contract ethquiz {
+
+// Event that will be emitted when Ether is withdrawn from the contract
+event EtherWithdrawn(address indexed recipient, uint256 amount);
 
 //address of the owner of the smart contract
 address payable public owner;
@@ -19,6 +22,7 @@ constructor(){
 function withdraw(uint256 amount) external {
     require(amount <= address(this).balance, "too much!");
     payable(msg.sender).transfer(amount);
+      emit EtherWithdrawn(msg.sender, amount);
     }
 
 //to check the available balance in the smart contract
@@ -26,4 +30,3 @@ function getBalance() external view returns (uint){
     return address(this).balance;
     }
 }
-//initial amount on smart contract:300000000000000000 wei
