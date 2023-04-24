@@ -44,9 +44,9 @@ The gaming format of this app was inspired by trickJs kbc-quiz-app
 - After withdrawing, you can exit the game and reload the page for another game.
 
 ## Journal For Web3Afrika Hackathon
-- This Project was submitted for the Web3Afrika Hackathon sponsored by Bunzz.
 - 20/04/2023: The original plan was to deploy the smart contract for this project on the Bunzz platform. However, technical difficulties during deployment rendered this unfeasible. As a result, the smart contract(deployed with remix) was imported as an external module, and given the name 'ethereumQuizApp'. This module was subsequently integrated into the 'ERC20DAOToken' module that already existed on the Bunzz platform.
 ![bandicam 2023-04-22 15-02-22-752](https://user-images.githubusercontent.com/120677681/233789959-42755f2e-0564-4642-ae3b-56a89fae5ba2.jpg)
+- 22/04/2023 This Project was submitted for the Web3Afrika Hackathon sponsored by Bunzz. I clearly stated the issues i faced above on the submission form.
 - 23/04/2023: This is to inform you that I have successfully resolved the issue that I reported on the submission form. After numerous attempts, I was able to deploy the smartcontract on Bunzz, and I am pleased to confirm that it has been successfully deployed.
 ![bandicam 2023-04-24 07-47-59-058](https://user-images.githubusercontent.com/120677681/233922442-b95c8317-a81e-444c-b878-01453acd2a0f.jpg)
 
