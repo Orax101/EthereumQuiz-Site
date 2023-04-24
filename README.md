@@ -40,7 +40,7 @@ The gaming format of this app was inspired by trickJs kbc-quiz-app
 - Once connected, input a short nickname or username in the "enter name" field and click the start button to begin the game.
 - The game consists of 15 stages, each with an Ethereum-based question. You have 30 seconds to provide the correct answer to each question, otherwise, the game ends.
 - Upon completion of the game, the amount of ETH assigned to the level you ended the game on will become your earnings.
-- To withdraw your earnings, there is a button available. However, you must have won a minimum of 0.004 ETH to be able to withdraw.
+- To withdraw your earnings, there is a button available. However, you must have won a minimum of 0.00004 ETH to be able to withdraw.
 - After withdrawing, you can exit the game and reload the page for another game.
 
 ## For Web3Afrika Hackathon
