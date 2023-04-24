@@ -18,7 +18,9 @@
 
 **Frontend IDE:** Visual Studiocode. 
 
-**Smart Contract Testing/Deployment:** Remix Online IDE.(then imported into Bunzz)
+**Smart Contract Testing:** Remix IDE
+
+**Smart Contract Deployment:** Bunzz
 
 
 
